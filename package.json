@@ -1,0 +1,28 @@
+{
+  "name": "cafeteria-resi",
+  "version": "1.0.0",
+  "description": "esto es para la cafeteria resi",
+  "main": "index.html",
+  "scripts": {
+    "build-css":"node-sass --include-path scss style/scss/prueba.scss style/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandroresi/cafeteria-resi.git"
+  },
+  "keywords": [
+    "npm",
+    "init"
+  ],
+  "author": "ASC/PUC RESI leandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandroresi/cafeteria-resi/issues"
+  },
+  "homepage": "https://github.com/leandroresi/cafeteria-resi#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
