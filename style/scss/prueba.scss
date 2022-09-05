@@ -1,3 +1,4 @@
+@import "./variables/vars";
 * {
     padding: 0;
     margin: 0;
@@ -26,24 +27,29 @@ header {
 }
 
 .div-h1 {
-    width: 100%;
+    width: $ancho;
     position: absolute;
     top: 5em;
     right: 0;
-    color: #ffff;
+    color: $text-color;
     text-align: center;
     justify-content: center;
     display: flex;
     z-index: 2;
     font-size: 2.5em;
     font-family: 'Playfair Display', serif;
-    animation: backInDown;
+    animation:map-get($map: $animacion, $key:animation );
     animation-duration: 1s;
 }
 
+@mixin sizes ($bg-color, $ancho) {
+    background-color: $bg-color;
+    width: $ancho;
+}
+
+
 .div {
-    background-color: black;
-    width: 100%;
+@include sizes(black,100% );
     height: 100vh;
     position: absolute;
     top: 0;
@@ -52,19 +58,12 @@ header {
     opacity: .55;
 }
 p {
-    width: 100%;
-    color: #ffff;
+    @extend .div-h1;
+    width: $ancho;
+    color: $text-color;
     font-size: 2.3em;
-    z-index: 3;
     top: 9em;
-    right: 0;
-    position: absolute;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    z-index: 2;
     font-family: 'Montserrat', sans-serif;
-    animation: backInDown;
     animation-duration: 1.3s;
 }
 
