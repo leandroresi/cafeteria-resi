@@ -5,7 +5,7 @@
     border-radius: 0;
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:500px) {
 
     a {
         left: 45%;
@@ -14,7 +14,7 @@
 
 }
 
-video {
+.img-fondo {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -29,17 +29,18 @@ header {
 .div-h1 {
     width: $ancho;
     position: absolute;
-    top: 5em;
+    top: 4.5em;
     right: 0;
     color: $text-color;
     text-align: center;
     justify-content: center;
     display: flex;
     z-index: 2;
-    font-size: 2.5em;
-    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-family: 'Cormorant Garamond', serif;
     animation:map-get($map: $animacion, $key:animation );
     animation-duration: 1s;
+    
 }
 
 @mixin sizes ($bg-color, $ancho) {

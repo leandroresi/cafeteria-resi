@@ -1,145 +1,191 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    list-style:none ;
     color: #fff;
+  
 }
 
-@media screen and (max-width:420px){
-
-.aside-h1{
-
-font-size: 3em;
-
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.ul-li{
+h1{
+    padding: 20px 100px;
+    display: flex;
+    font-size: 3em;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+
+
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-right: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+
+.nav-menu li{
+    margin-right: 1.5em;
+}
+
+.nav-menu a{
+    text-decoration: none;
     font-size: 1.5em;
+
+}
+
+.nav-menu a:hover{
+    color: black;
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: .50em;
+    padding: .25em .75em;
+}
+
+
+label, #check{
+display: none;
+}
+
+.info-p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media screen and (max-width: 800px){
+    
+
+    
+.checkbtn{
+    display: block;
+}
+
+label{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+
+.nav-menu ul{
+display: block;
+position: fixed;
+top: 70px;
+left: -100%;
+background-color: #222;
+width: 100%;
+height: 100vh;
+right: 0;
+padding-top: 30px;
+text-transform: uppercase;
+}
+
+.nav-menu ul li{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+}
+
+#check:checked ~ ul{
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    position: absolute;
+
+}
+
+.info-p{
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    margin-top: -20%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 }
 
-.img-fondo {
-    width: 50%;
-    height: 100vh;
+
+@media screen and (max-width: 500px){
+
+h1{
+    font-size: 2.5em;
+}
+
+    .info-p{
+        font-size: 1em;
+        margin-top: -40%;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+
+
+h1 {
+        font-size: 2.5em;
+    }
+
+    .info-p {
+            font-size: .8em;
+            margin-top: -60%;
+            margin-left: -10%;
+            font-family: 'Montserrat', sans-serif;
+        }
+}
+
+
+
+
+
+
+
+
+img {
+    width: 100%;
     object-fit: cover;
 }
 
 
-
-.header-div{
-    background-color: #000000;
-    width: 50%;
-    height: 100vh;
+.info{
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: .55;
+    width: calc(100% - 15%);
+    height: 150px;
+    top: 45%;
+    left: 15%;
+    
 }
 
-
-
-aside{
-    float: right;
-    top: 0;
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 100vh;
-    background-color: #000000;
+p{
+   font-size: 2em;
+    width: 500px;
+    justify-content: center;
     text-align: center;
+    line-height: 2em;
 }
-
-.aside-div{
-    
-    margin-top: 6em;
-
-}
-
-.aside-h1{
-   margin-top: 8px;
-   font-size: 3.2em;
-   font-family: 'Playfair Display', serif;
-   animation: backInRight;
-   animation-duration: 1s;
-   
-
-}
-
-.aside-enlaces{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    padding: 20px;
-    text-decoration: none;
-    animation:backInRight;
-    animation-duration: 1.3s;
-}
-
-.aside-enlaces:hover {
-    transform: translateY(-15px);
-    transition: .5s;
-}
-
-.aside-enlaces::before,
-.aside-enlaces::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #ffff;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-
-
-.aside-enlaces::before {
-    top: -3px;
-    transform-origin: left;
-
-}
-
-.aside-enlaces::after {
-    bottom: -3px;
-    transform-origin: right;
-}
-
-.aside-enlaces:hover::before,
-.aside-enlaces:hover::after {
-    transform: scaleX(1);
-}
-
-.ul-li{
-
-    list-style: none;
-    font-size: 1.8em;
-   
-}
-
-i{
-    font-size: 50px;
-    padding-right: 17px;
-    animation: backInRight;
-    animation-duration: 1.3s;
-}
-
-
-i:hover{
-
-    transform: translateY(-15px);
-    transition: .7s;
-    
-
-}
-
-
-
-
-
-
-
 
 
 
