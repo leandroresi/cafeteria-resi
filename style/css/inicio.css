@@ -18,7 +18,7 @@ header{
 h1{
     padding: 20px 100px;
     display: flex;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
 }
@@ -29,7 +29,7 @@ h1{
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    margin-right: 40px;
+    margin-right: 200px;
     font-family: 'Source Sans Pro', sans-serif;
     
 }
@@ -41,14 +41,15 @@ h1{
 
 .nav-menu a{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
+    padding-right: 30px;
 
 }
 
 .nav-menu a:hover{
-    color: black;
-    background-color: aliceblue;
-    border: 2px solid aliceblue;
+    color: #000;
+    background-color: #d3ad7f;
+    border: 2px solid #d3ad7f;
     border-radius: .50em;
     padding: .25em .75em;
 }
@@ -74,7 +75,7 @@ display: none;
 label{
     display: block;
     position: fixed;
-    top: 20px;
+    top: 40px;
     right: 20px;
 }
 
@@ -135,10 +136,13 @@ h1{
 }
 
     .info-p{
-        font-size: 1em;
-        margin-top: -40%;
+        font-size: 1.4em;
+        margin-top: -25%;
+        margin-left: 10%;
+        width: 250px;
         font-family: 'Montserrat', sans-serif;
     }
+
 }
 
 
@@ -146,26 +150,25 @@ h1{
 
 
 h1 {
-        font-size: 2.5em;
+        font-size: 2.4em;
+       padding: 20px;
+       padding-left: 2em;
+
     }
 
     .info-p {
-            font-size: .8em;
-            margin-top: -60%;
-            margin-left: -10%;
+            font-size: 1.4em;
+            margin-top: -25%;
+            margin-left: 10%;
+            width: 250px;
             font-family: 'Montserrat', sans-serif;
         }
 }
 
 
-
-
-
-
-
-
 img {
     width: 100%;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -189,10 +192,48 @@ p{
 
 
 
+.footer{
+    background:#000000;
+    text-align: center;
+}
 
+.footer .share{
+    padding:1rem 0;
+}
 
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:.1rem solid rgba(255, 255, 255, .3);
+    margin:.3rem;
+    border-radius: 50%;
+}
 
+.footer .share a:hover{
+    background-color:#d3ad7f;
+}
 
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap:1rem;
+}
+
+.footer .links a{
+    padding:.7rem 2rem;
+    color:#fff;
+    border: .1rem solid rgba(255, 255, 255, .3);
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background:#d3ad7f;
+}
 
 
 
