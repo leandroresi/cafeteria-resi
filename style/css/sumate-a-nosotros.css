@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -7,11 +7,11 @@
 
 img{
     width: 100%;
-    height: 100vh;
     object-fit: cover;
+    height: 100vh;
 }
 
-.div{
+.div {
     background-color: black;
     width: 100%;
     height: 100vh;
@@ -22,7 +22,7 @@ img{
     opacity: .55;
 }
 
-.contenedor{
+.contenedor {
     width: 100%;
     position: absolute;
     top: 0;
@@ -33,27 +33,27 @@ img{
 
 }
 
-.info{
+.info {
     width: 50%;
     height: 100%;
     justify-content: center;
     text-align: center;
     margin-top: 8em;
-    animation:backInLeft;
+    animation: backInLeft;
     animation-duration: 1.3s;
 }
 
-h1{
+h1 {
     font-size: 2.5em;
     font-family: 'Playfair Display', serif;
 }
 
-p{
+p {
     font-size: 1.5em;
     padding: .6em;
 }
 
-.aside-form{
+.aside-form {
     width: 50%;
     height: 100vh;
     top: 0;
@@ -63,23 +63,23 @@ p{
     justify-content: center;
     text-align: center;
     margin-top: 8em;
-    animation:backInRight;
+    animation: backInRight;
     animation-duration: 1.3s;
 }
 
-.form-h2{
+.form-h2 {
     font-size: 2.5em;
     font-family: 'Playfair Display', serif;
 }
 
-.div-form{
+.div-form {
     margin-left: 20%;
     margin-right: 20%;
 }
 
 
 
-.form-input{
+.form-input {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -90,7 +90,7 @@ p{
 }
 
 
-button{
+button {
     width: 90%;
     font-size: 1em;
     margin-right: 5%;
@@ -114,20 +114,5 @@ i:hover {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
