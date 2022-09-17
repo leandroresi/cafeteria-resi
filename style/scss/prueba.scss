@@ -5,19 +5,8 @@
     border-radius: 0;
 }
 
-@media screen and (max-width:500px) {
-
-    a {
-        left: 45%;
-        margin-top: 20%;
-    }
-
-}
-
-.img-fondo {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+body{
+    background-color: #fefbfb;
 }
 
 header {
@@ -37,7 +26,7 @@ header {
     display: flex;
     z-index: 2;
     font-size: 3em;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     animation:map-get($map: $animacion, $key:animation );
     animation-duration: 1s;
     
@@ -49,36 +38,31 @@ header {
 }
 
 
-.div {
-@include sizes(black,100% );
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: .55;
-}
 p {
     @extend .div-h1;
-    width: $ancho;
-    color: $text-color;
+    width: 100%;
     font-size: 2.3em;
     top: 9em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     animation-duration: 1.3s;
+    color:$bg-color-p;
 }
 
 a {
-    color: #ffff;
+    color: $bg-color;
     font-size: 2.2em;
     z-index: 4;
     top: 12em;
-    right: 43.5%;
+    right: 41.55%;
+    background-color: #4c4b34;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 15px;
     position: absolute;
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cinzel', serif;
     text-decoration: none;
     animation: backInDown;
     animation-duration: 1.5s;
@@ -88,31 +72,27 @@ a:hover {
     transform: translateY(-15px);
     transition: .5s;
 }
-a::before,
-a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #ffff;
-    transform: scaleX(0);
-    transition: transform .5s;
+
+
+@media screen and (max-width:500px) {
+
+    a {
+        left: 45%;
+        margin-top: 20%;
+    }
+
+
+    .div-h1 {
+        margin-top: -1em;
+    }
+
+
+    a {
+        width: 50%;
+        margin-left: -2.6em;
+    }
 }
 
 
-a::before {
-    top: -3px;
-    transform-origin: left;
 
-}
 
-a::after {
-    bottom: -3px;
-    transform-origin: right;
-}
-
-a:hover::before,
-a:hover::after {
-    transform: scaleX(1);
-}
