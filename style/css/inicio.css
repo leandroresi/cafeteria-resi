@@ -104,7 +104,7 @@ span{
 
 .div-img{
     margin-right: 2em;
-    margin-top: 5em;
+    margin-top: 4em;
 }
 
 .footer {
@@ -115,6 +115,7 @@ span{
 }
 
 .footer .share {
+    width: 100%;
     padding: 1rem 0.5;
 }
 
@@ -125,9 +126,8 @@ span{
     font-size: 2rem;
     text-align: center;
     color: var(--color-detalles);
-    border: .1rem solid var(--bg-color);
     margin: .3rem;
-    border-radius: 50%;
+    
 }
 
 .footer .share a:last-child {
@@ -145,7 +145,15 @@ span{
 
 @media screen and (max-width: 800px){
     
+.div-p {
+        margin-top: 10em;
+        width: 100%;
+    }
 
+
+img {
+        display: none;
+    }
     
 .checkbtn{
     display: block;
@@ -197,6 +205,11 @@ text-transform: uppercase;
 }
 
 
+.footer {
+
+    text-align: center;
+}
+
 }
 
 
@@ -208,6 +221,7 @@ h1{
 
 .div-p{
     margin-top: 8em;
+    width: 100%;
 }
 
 p{
@@ -215,14 +229,17 @@ p{
 }
 
 span{
-    font-size: 1em;
+    font-size: 1.4em;
 }
 img {
     display: none;
 }
 
 
+.footer {
 
+    text-align: center;
+}
 
 
 }
