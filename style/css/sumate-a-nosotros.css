@@ -40,39 +40,6 @@ h1 {
     text-transform: uppercase;
 }
 
-
-.nav-menu ul {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    margin-right: 100px;
-    font-family: var(--text-family);
-
-}
-
-.nav-menu li {
-    margin-right: 1.5em;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    font-size: 1em;
-    padding-right: 30px;
-    color: var(--color-principal);
-
-}
-
-
-.nav-menu a:hover {
-    background-color: var(--color-detalles);
-    padding: .8rem;
-}
-
-label,
-#check {
-    display: none;
-}
-
 .main{
     width: 100%;
     display: flex;
@@ -81,7 +48,7 @@ label,
 form{
     width: 90%;
     max-width: 400px;
-    margin:2rem auto;
+    margin:4rem auto;
     border: var(--color-detalles) 4px solid;
     border-radius: 7px;
     background-color: var(--color-principal);
@@ -102,23 +69,24 @@ h2{
     text-align: center;
 }
 
-input{
-   width: auto;
-   margin: 12px 0;
+.div-inputs{
+   width: 95%;
+   max-width: 400px;
+   margin: 15px 0;
    padding: 10px;
    border: var(--color-detalles) 2px solid;
    border-radius:10px;
    
 }
 
-.div-btn{
+.div-btn-form{
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
 
-button{
+.div-btn{
     padding: 7px;
     border-radius: 10px;
     border: var(--color-detalles) 2px solid;
@@ -138,6 +106,9 @@ button{
 
 section ul {
     width: 100%;
+    max-width: 895px;
+    text-align: right;
+    
 }
 
 section ul li {
