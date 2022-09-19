@@ -181,14 +181,15 @@ i:visited {
        
         height: 100%;
         max-height: 600px;
-        width: 100%;
-        max-width: 700px;
+        width: 800px;
+        
     }
         
     p {
-        margin: .5rem 1rem;
+        margin: .5rem none;
         font-size: 1.2rem;
-        width: auto;
+        width: 100%;
+        max-width: 600px;
         
     }
 
@@ -203,7 +204,13 @@ i:visited {
 
 }
 
-@media screen and (max-width: 420px) {
+
+
+
+
+
+
+@media screen and (max-width: 470px) {
 
 
      h1 {
@@ -228,14 +235,15 @@ i:visited {
     }
         
     .div-p {
-    margin-top: -2rem;
+    margin-top: .5rem;
     height: auto;
     border-radius: 5px;
-    width: 100%;
+    width: 600px;
+    margin-left: -4rem;
     }
         
     p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         width: auto;
         
     }
@@ -247,6 +255,8 @@ i:visited {
 
   section ul {
       width: 100%;
+      text-align: left;
+      justify-content: flex-start;
   }
 
 
