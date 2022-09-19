@@ -8,44 +8,93 @@
     <meta name="description" content="conocé los distintos tipos de postres">
     <link rel="stylesheet" href="../style/css/postres.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>COFFEE - Postres</title>
 </head>
 <body>
-    
+     
+
 <header>
-
-  <img class="img-fondo" src="../img/video/postres.jpg" alt="">
- 
-  <div class="header-div"> </div>
-
-   <div class="info">
-
-   <h1 class="info-h1">COFFEE</h1>
-
-   <ul class="info-ul">
-
-    <li class="info-li"> <p>Medialuna con JYQ................$130</p></li>
-
-    <li class="info-li"> <p>Medialuna con Dulce de leche.....$110</p></li>
-
-    <li class="info-li"> <p>Medialuna...............$90</p></li>
-
-    <li class="info-li"><p>Pastel de Limon..........$370</p></li>
-
-    <li class="info-li"><p>Waffles Dulces..............$670</p></li>
-
-    <li class="info-li"><p>Waffles Salados..............$640</p></li>
-
-    <li class="info-li"><p>Brownie...............$480</p></li>
-
-   </ul>
-
-
+  <nav class="navbar bg-light fixed-top" style="background-color:#fefbfb ;">
+  <div class="container-fluid">
+    <h1>COFFEE</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="color:#4c4b34 ;background-color: #bfb192;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:#bfb192 ; color: #4c4b34;">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #4c4b34; font-family:'Cinzel', serif;">COFFEE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/tipos-de-cafe.html" style="color:#4c4b34 ;">Tipos de Cafe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/potres.html" style="color:#4c4b34 ;">Postres</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../pages/sobre-nosotros.html" style="color:#4c4b34 ;">Sobre Nosotros</a></li>
+              <li><a class="dropdown-item" href="../pages/sumate-a-nosotros.html" style="color:#4c4b34 ;">Sumate a Nosotros</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" style="color:#4c4b34 ;">Proximamente</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" style="color:#4c4b34 ; background-color: #bfb192; border-color: #4c4b34; text-transform: uppercase;">Buscar</button>
+        </form>
+      </div>
+    </div>
   </div>
+</nav>
 
 </header>
 
+   <div class="info">
 
+   <h2 class="info-h2">MENU</h2>
+
+   <ul class="info-ul">
+    
+    <li class="info-li"><p>Brownie.............$480</p></li>
+
+    <li class="info-li"> <p>Medialuna...............$90</p></li>
+
+    <li class="info-li"><p>Pastel de Limon........$370</p></li>
+
+    <li class="info-li"><p>Waffles Dulces..............$670</p></li>
+
+    <li class="info-li"><p>Waffles Salados................$640</p></li>
+
+    <li class="info-li"> <p>Medialuna con Dulce........$110</p></li>
+
+    <li class="info-li"> <p>Medialuna con JYQ................$130</p></li>
+
+
+
+   </ul>
+
+  </div>
+
+<section class="footer">
+  <ul>
+    <li><a href="*"><i class='bx bxl-instagram'> </i></a> </li>
+    <li><a href="*"><i class='bx bxl-twitter' ></i></a></i></li>
+    <li><a href="*"><i class='bx bxl-pinterest' ></i></a></i></li>
+  </ul>
+
+
+</section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>

@@ -1,28 +1,41 @@
+:root {
+    --color-detalles: #4c4b34;
+    --color-principal: #bfb192;
+    --bg-color: #fefbfb;
+    --title-family: 'Cinzel', serif;
+    --text-family: 'Roboto', sans-serif;
+
+}
+
 * {
     padding: 0;
     margin: 0;
-    border-radius: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffff;
+    list-style: none;
 }
 
-
-.img-fondo {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.header-div {
-    background-color: #000000;
+header {
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: .55;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+h1 {
+    padding: 20px 150px;
+    color: var(--color-detalles);
+    display: flex;
+    font-size: 2.6em;
+    font-family: var(--title-family);
+    text-transform: uppercase;
 }
 
 .info {
@@ -33,21 +46,103 @@
     z-index: 1;
     animation: backInUp;
     animation-duration: 1.3s;
+    text-align: center;
+    justify-content: center;
 }
 
-.info-h1 {
-    font-size: 3em;
-    font-family: 'Playfair Display', serif;
-    margin-top: 3em;
+.info-h2 {
+    font-size: 2em;
+    font-family: var(--title-family);
+    margin-top: 3.4em;
+    color: var(--color-detalles);
 }
 
+.info-ul{
+    margin-left: -2.2rem;
+}
 
 .info-li {
-    padding: .5em;
+    padding: .2em;
     list-style: none;
+    font-family: var(--text-family);
+    color: var(--color-principal);
 }
 
 
 p {
     font-size: 1.5em;
 }
+
+
+section {
+    width: 100%;
+    height: 90px;
+    margin-top: auto;
+    background-color: var(--color-principal);
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section ul {
+    width: 100%;
+    max-width: 895px;
+    text-align: right;
+
+}
+
+section ul li {
+    display: inline-block;
+    padding: 24px 25px;
+
+}
+
+i {
+    font-size: 2.5em;
+    color: var(--color-detalles);
+}
+
+i:visited {
+    color: var(--color-detalles);
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    
+    h1 {
+        font-size: 2.5em;
+    
+    }
+}
+@media screen and (max-width: 420px) {
+
+
+    h1 {
+        padding: 20px;
+        padding-left: 2em;
+
+    }
+
+    .info-h2{
+        font-size: 1.8em;
+        margin-top: 4em;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
+    }
+        
+    section ul {
+        width: 100%;
+    }
+        
+}
+
+
+    }
