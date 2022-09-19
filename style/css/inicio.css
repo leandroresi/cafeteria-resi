@@ -201,13 +201,14 @@ i:visited {
     img {
         display: none;
     }
-
     .footer {
         width: 100%;
         text-align: center;
     }
-
+    
     section ul {
         width: 100%;
+        text-align: left;
+        justify-content: flex-start;
     }
 }

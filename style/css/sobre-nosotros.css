@@ -243,13 +243,13 @@ i:visited {
     }
         
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: auto;
         
     }
 
   .footer {
-
+      width: 100%;
       text-align: center;
   }
 

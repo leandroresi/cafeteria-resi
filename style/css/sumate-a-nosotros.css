@@ -238,12 +238,14 @@ i:visited {
 
 
 
-
     .footer {
+         width: 100%;
         text-align: center;
     }
-
+    
     section ul {
         width: 100%;
+        text-align: left;
+        justify-content: flex-start;
     }
 }
